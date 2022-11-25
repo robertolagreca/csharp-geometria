@@ -24,13 +24,15 @@
 using Geometria;
 
 int baseUtente, hUtente, perimetro, area;
-
-Console.WriteLine("Inserisci in ordine base ed altezza.");
+Console.WriteLine("Inserisci in ordine base ed altezza del rettagolo 1.");
 baseUtente = int.Parse(Console.ReadLine());
-hUtente= int.Parse(Console.ReadLine());
+hUtente = int.Parse(Console.ReadLine());
+
+
 
 Rettangolo rettangolo1= new Rettangolo();
-
+Rettangolo rettangolo2 = new Rettangolo();
+Rettangolo rettangolo3 = new Rettangolo();
 
 rettangolo1.baseRettangolo = baseUtente;
 rettangolo1.altezzaRettangolo = hUtente;
@@ -39,5 +41,30 @@ area = rettangolo1.CalcolaArea(rettangolo1.baseRettangolo, rettangolo1.altezzaRe
 perimetro = rettangolo1.CalcolaPerimetro(rettangolo1.baseRettangolo, rettangolo1.altezzaRettangolo);
 
 rettangolo1.StampaRettangolo(perimetro, area);
+
+Console.WriteLine("Inserisci in ordine base ed altezza del rettagolo 2.");
+baseUtente = int.Parse(Console.ReadLine());
+hUtente = int.Parse(Console.ReadLine());
+
+rettangolo2.baseRettangolo = baseUtente;
+rettangolo2.altezzaRettangolo = hUtente;
+
+area = rettangolo2.CalcolaArea(rettangolo2.baseRettangolo, rettangolo2.altezzaRettangolo);
+perimetro = rettangolo2.CalcolaPerimetro(rettangolo2.baseRettangolo, rettangolo2.altezzaRettangolo);
+
+rettangolo2.StampaRettangolo(perimetro, area);
+
+Console.WriteLine("Inserisci in ordine base ed altezza del rettagolo 3.");
+baseUtente = int.Parse(Console.ReadLine());
+hUtente = int.Parse(Console.ReadLine());
+
+rettangolo3.baseRettangolo = baseUtente;
+rettangolo3.altezzaRettangolo = hUtente;
+
+area = rettangolo3.CalcolaArea(rettangolo3.baseRettangolo, rettangolo3.altezzaRettangolo);
+perimetro = rettangolo3.CalcolaPerimetro(rettangolo3.baseRettangolo, rettangolo3.altezzaRettangolo);
+
+rettangolo3.StampaRettangolo(perimetro, area);
+
 
 
