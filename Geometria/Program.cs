@@ -1,8 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 //Creare una classe Rettangolo con due attributi interi: baseRettangolo e altezzaRettangolo.
+
 //Aggiungere due metodi: calcolaArea e calcolaPerimetro che calcolano e restituiscono,
 //rispettivamente, l’area e il perimetro del rettangolo.
+
 //Poi, nel vostro programma principale (Program.cs) chiedete all’utente di inserire,
 //da console, i valori di base e di altezza con cui istanziare un nuovo Rettangolo.
 
@@ -36,11 +38,6 @@ rettangolo1.altezzaRettangolo = hUtente;
 area = rettangolo1.CalcolaArea(rettangolo1.baseRettangolo, rettangolo1.altezzaRettangolo);
 perimetro = rettangolo1.CalcolaPerimetro(rettangolo1.baseRettangolo, rettangolo1.altezzaRettangolo);
 
-Console.WriteLine("-- Rettangolo 1 --");
-Console.WriteLine();
-Console.WriteLine("Base: \t" + rettangolo1.baseRettangolo);
-Console.WriteLine("Altezza: \t" + rettangolo1.altezzaRettangolo);
-Console.WriteLine("Perimetro: \t" + perimetro);
-Console.WriteLine("Area: \t" + area);
+rettangolo1.StampaRettangolo(perimetro, area);
 
 
