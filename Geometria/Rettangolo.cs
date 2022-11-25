@@ -28,14 +28,17 @@ namespace Geometria
             return perimetro;
             }
 
-            public void StampaRettangolo(int perimetro,int area)
+            public void StampaRettangolo(int perimetro,int area, int i)
              {
-            Console.WriteLine("-- Rettangolo 1 --");
+
+            Console.WriteLine("-- Rettangolo " + i +" --");
             Console.WriteLine();
             Console.WriteLine("Base: \t" + baseRettangolo);
             Console.WriteLine("Altezza: \t" + altezzaRettangolo);
             Console.WriteLine("Perimetro: \t" + perimetro);
             Console.WriteLine("Area: \t" + area);
+            Console.WriteLine();
+
         }
     }
 }
