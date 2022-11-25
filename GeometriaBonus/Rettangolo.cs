@@ -43,22 +43,52 @@ namespace Geometria
 
         public void DisegnaRettangolo(int b, int h)
         {
+            string baseDisegnata ="";
+
+            for (int i = 0; i < b; i++)
+            {
+                if (i == 0)
+                {
+                    Console.Write("    __ ");
+                    baseDisegnata += "     ";
+                }
+                else if (i > 0 && i < b - 1)
+                {
+                    Console.Write(" __ ");
+                    baseDisegnata += "    ";
+                } else
+                {
+                    Console.WriteLine(" __  ");
+                    baseDisegnata += "     ";
+                }
+
+            }
+            Console.WriteLine("");
             for (int i = 0; i < h; i++)
             {
-                Console.WriteLine(" |");
+                Console.WriteLine(" |" + baseDisegnata + "| ");
                 Console.WriteLine("");
+
             }
 
             for (int i = 0; i < b; i++)
-            {   
-                if(i == 0)
+            {
+                if (i == 0)
                 {
-                    Console.Write("  __ ");
+                    Console.Write("    __ ");
+                    
                 }
-                else{
+                else if (i > 0 && i < b - 1)
+                {
                     Console.Write(" __ ");
+                    
                 }
-                
+                else
+                {
+                    Console.WriteLine(" __  ");
+                    
+                }
+
             }
 
             Console.WriteLine("");
