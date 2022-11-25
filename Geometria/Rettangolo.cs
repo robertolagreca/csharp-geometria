@@ -15,10 +15,17 @@ namespace Geometria
             public int calcolaArea(int b, int h)
             {
             int area;
-            area = (b * h) / 2;
+            area = b * h;
 
             return area;
             }
         
+            public int calcolaPerimetro(int b, int h) 
+            {
+            int perimetro;
+            perimetro = (b * 2) + (h * 2);
+
+            return perimetro;
+            }
     }
 }
