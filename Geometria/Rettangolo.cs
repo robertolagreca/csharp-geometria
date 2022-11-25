@@ -8,11 +8,11 @@ namespace Geometria
 {
     public class Rettangolo
     {
-        
-            int baseRettangolo;
-            int altezzaRettangolo;
 
-            public int calcolaArea(int b, int h)
+            public int baseRettangolo;
+            public int altezzaRettangolo;
+
+            public int CalcolaArea(int b, int h)
             {
             int area;
             area = b * h;
@@ -20,7 +20,7 @@ namespace Geometria
             return area;
             }
         
-            public int calcolaPerimetro(int b, int h) 
+            public int CalcolaPerimetro(int b, int h) 
             {
             int perimetro;
             perimetro = (b * 2) + (h * 2);
